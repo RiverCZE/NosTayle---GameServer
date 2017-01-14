@@ -1,0 +1,5 @@
+c:\users\mehdy\documents\visual studio 2012\Projects\NosTayle - GameServer\NosTayle - GameServer\bin\Debug\NosTayle - GameServer.exe.config
+c:\users\mehdy\documents\visual studio 2012\Projects\NosTayle - GameServer\NosTayle - GameServer\bin\Debug\NosTayle - GameServer.exe
+c:\users\mehdy\documents\visual studio 2012\Projects\NosTayle - GameServer\NosTayle - GameServer\bin\Debug\NosTayle - GameServer.pdb
+c:\users\mehdy\documents\visual studio 2012\Projects\NosTayle - GameServer\NosTayle - GameServer\obj\Debug\NosTayle - GameServer.exe
+c:\users\mehdy\documents\visual studio 2012\Projects\NosTayle - GameServer\NosTayle - GameServer\obj\Debug\NosTayle - GameServer.pdb

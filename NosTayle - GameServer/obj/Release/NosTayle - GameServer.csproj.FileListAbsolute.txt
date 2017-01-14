@@ -1,0 +1,19 @@
+C:\Users\mehdy\Documents\Visual Studio 2012\Projects\NosTayle - GameServer\NosTayle - GameServer\bin\Release\NosTayle - GameServer.exe.config
+C:\Users\mehdy\Documents\Visual Studio 2012\Projects\NosTayle - GameServer\NosTayle - GameServer\bin\Release\NosTayle - GameServer.exe
+C:\Users\mehdy\Documents\Visual Studio 2012\Projects\NosTayle - GameServer\NosTayle - GameServer\bin\Release\NosTayle - GameServer.pdb
+C:\Users\mehdy\Documents\Visual Studio 2012\Projects\NosTayle - GameServer\NosTayle - GameServer\bin\Release\MySql.Data.dll
+C:\Users\mehdy\Documents\Visual Studio 2012\Projects\NosTayle - GameServer\NosTayle - GameServer\obj\Release\NosTayle - GameServer.exe
+C:\Users\mehdy\Documents\Visual Studio 2012\Projects\NosTayle - GameServer\NosTayle - GameServer\obj\Release\NosTayle - GameServer.pdb
+C:\Users\mehdy\Documents\Visual Studio 2012\Projects\NosTayle - GameServer\NosTayle - GameServer\obj\Release\NosTayle - GameServer.csprojResolveAssemblyReference.cache
+C:\Users\migue_000\Desktop\NostayleEmulator\NosTayle - GameServer\NosTayle - GameServer\bin\Release\NosTayle - GameServer.exe.config
+C:\Users\migue_000\Desktop\NostayleEmulator\NosTayle - GameServer\NosTayle - GameServer\obj\Release\NosTayle - GameServer.exe
+C:\Users\migue_000\Desktop\NostayleEmulator\NosTayle - GameServer\NosTayle - GameServer\obj\Release\NosTayle - GameServer.pdb
+C:\Users\migue_000\Desktop\NostayleEmulator\NosTayle - GameServer\NosTayle - GameServer\bin\Release\NosTayle - GameServer.exe
+C:\Users\migue_000\Desktop\NostayleEmulator\NosTayle - GameServer\NosTayle - GameServer\bin\Release\NosTayle - GameServer.pdb
+C:\Users\migue_000\Desktop\NostayleEmulator\NosTayle - GameServer\NosTayle - GameServer\obj\Release\NosTayle - GameServer.csprojResolveAssemblyReference.cache
+C:\Users\lorenzo\Desktop\Nostayle!!!\NosTayle - GameServer\NosTayle - GameServer\bin\Release\NosTayle - GameServer.exe.config
+C:\Users\lorenzo\Desktop\Nostayle!!!\NosTayle - GameServer\NosTayle - GameServer\obj\Release\NosTayle - GameServer.exe
+C:\Users\lorenzo\Desktop\Nostayle!!!\NosTayle - GameServer\NosTayle - GameServer\obj\Release\NosTayle - GameServer.pdb
+C:\Users\KILL009\Documents\Nostayle\NosTayle - GameServer\NosTayle - GameServer\bin\Release\NosTayle - GameServer.exe.config
+C:\Users\KILL009\Documents\Nostayle\NosTayle - GameServer\NosTayle - GameServer\obj\Release\NosTayle - GameServer.exe
+C:\Users\KILL009\Documents\Nostayle\NosTayle - GameServer\NosTayle - GameServer\obj\Release\NosTayle - GameServer.pdb

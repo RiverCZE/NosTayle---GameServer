@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AFFC1F3F-3219-4043-8E76-6B6A2C0FA430}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NosTayleGameServer</RootNamespace>
+    <AssemblyName>NosTayle - GameServer</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ServerIco.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\Nos - GameServer\Nos - GameServer\bin\Release\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Communication\AdminTools\AdminSession.cs" />
+    <Compile Include="Communication\Headers\Incoming.cs" />
+    <Compile Include="Communication\Headers\Outgoing.cs" />
+    <Compile Include="Communication\Messages\GameCrypto.cs" />
+    <Compile Include="Communication\Messages\GlobalMessage.cs" />
+    <Compile Include="Communication\Messages\ServerPacket.cs" />
+    <Compile Include="Communication\ReceivePackets\CharsLoadedPackets\CreateCharacterEvent.cs" />
+    <Compile Include="Communication\ReceivePackets\CharsLoadedPackets\DeleteCharacterEvent.cs" />
+    <Compile Include="Communication\ReceivePackets\CharsLoadedPackets\SelectCharacterEvent.cs" />
+    <Compile Include="Communication\ReceivePackets\EntitiesPackets\EntitieStatEvent.cs" />
+    <Compile Include="Communication\ReceivePackets\EntitiesPackets\InfoRequestEvent.cs" />
+    <Compile Include="Communication\ReceivePackets\EntitiesPackets\NpcRequestEvent.cs" />
+    <Compile Include="Communication\ReceivePackets\EntitiesPackets\NpcSpecialRequestEvent.cs" />
+    <Compile Include="Communication\ReceivePackets\FamilyPackets\ActualiseFamilyHistoricRequestEvent.cs" />
+    <Compile Include="Communication\ReceivePackets\FamilyPackets\EditIntroFamilyEvent.cs" />
+    <Compile Include="Communication\ReceivePackets\FamilyPackets\FamilyChatEvent.cs" />
+    <Compile Include="Communication\ReceivePackets\FamilyPackets\FamilyCommandEvent.cs" />
+    <Compile Include="Communication\ReceivePackets\FamilyPackets\InfoFamilyEvent.cs" />
+    <Compile Include="Communication\ReceivePackets\FamilyPackets\UpdateFamilyMemberRankEvent.cs" />
+    <Compile Include="Communication\ReceivePackets\FamilyPackets\UpdateFamilyPermissionRankEvent.cs" />
+    <Compile Include="Communication\ReceivePackets\FriendPackets\FriendDeleteEvent.cs" />
+    <Compile Include="Communication\ReceivePackets\FriendPackets\FriendEnterMiniland.cs" />
+    <Compile Include="Communication\ReceivePackets\FriendPackets\FriendMessageEvent.cs" />
+    <Compile Include="Communication\ReceivePackets\FriendPackets\FriendRequestEvent.cs" />
+    <Compile Include="Communication\ReceivePackets\GroupPackets\BasicGroupRequestEvent.cs" />
+    <Compile Include="Communication\ReceivePackets\GroupPackets\LeaveGroupEvent.cs" />
+    <Compile Include="Communication\ReceivePackets\GroupPackets\SayGroupEvent.cs" />
+    <Compile Include="Communication\ReceivePackets\GroupPackets\UpdateGroupOptionEvent.cs" />
+    <Compile Include="Communication\ReceivePackets\GuriPackets\GuriEvent.cs" />
+    <Compile Include="Communication\ReceivePackets\GuriPackets\ScriptEvent.cs" />
+    <Compile Include="Communication\ReceivePackets\Interface.cs" />
+    <Compile Include="Communication\ReceivePackets\InventoryPackets\DeletItemEvent.cs" />
+    <Compile Include="Communication\ReceivePackets\InventoryPackets\DropItemEvent.cs" />
+    <Compile Include="Communication\ReceivePackets\InventoryPackets\EquipmentInfoEvent.cs" />
+    <Compile Include="Communication\ReceivePackets\InventoryPackets\GetDropItemEvent.cs" />
+    <Compile Include="Communication\ReceivePackets\InventoryPackets\MoveItemEvent.cs" />
+    <Compile Include="Communication\ReceivePackets\InventoryPackets\MoveItemSpecialEvent.cs" />
+    <Compile Include="Communication\ReceivePackets\InventoryPackets\UnwearItemEvent.cs" />
+    <Compile Include="Communication\ReceivePackets\InventoryPackets\UseItemEvent.cs" />
+    <Compile Include="Communication\ReceivePackets\InventoryPackets\WearItemEvent.cs" />
+    <Compile Include="Communication\ReceivePackets\MinilandPackets\MinilandAddItemEvent.cs" />
+    <Compile Include="Communication\ReceivePackets\MinilandPackets\MinilandEditEvent.cs" />
+    <Compile Include="Communication\ReceivePackets\MinilandPackets\MinilandGameReqEvent.cs" />
+    <Compile Include="Communication\ReceivePackets\MinilandPackets\MinilandRemoveItemEvent.cs" />
+    <Compile Include="Communication\ReceivePackets\MinilandPackets\MinilandUseObjectEvent.cs" />
+    <Compile Include="Communication\ReceivePackets\PlayersPackets\MoveNpcEvent.cs" />
+    <Compile Include="Communication\ReceivePackets\PlayersPackets\PlayerAttackEvent.cs" />
+    <Compile Include="Communication\ReceivePackets\PlayersPackets\PlayerPulseEvent.cs" />
+    <Compile Include="Communication\ReceivePackets\PlayersPackets\PlayerRestEvent.cs" />
+    <Compile Include="Communication\ReceivePackets\PlayersPackets\PlayerSayEvent.cs" />
+    <Compile Include="Communication\ReceivePackets\PlayersPackets\PlayerSetSkillBarEvent.cs" />
+    <Compile Include="Communication\ReceivePackets\PlayersPackets\PlayerWalkEvent.cs" />
+    <Compile Include="Communication\ReceivePackets\PlayersPackets\PlayerWalkOnPortalEvent.cs" />
+    <Compile Include="Communication\ReceivePackets\PlayersPackets\UpgradeItemEvent.cs" />
+    <Compile Include="Communication\ReceivePackets\ShopPackets\ShopBuyEvent.cs" />
+    <Compile Include="Communication\ReceivePackets\ShopPackets\ShopRequestEvent.cs" />
+    <Compile Include="Communication\ReceivePackets\SpecialistPackets\PutSpEvent.cs" />
+    <Compile Include="Communication\ReceivePackets\SpecialPackets\CommandEvent.cs" />
+    <Compile Include="Communication\ReceivePackets\SpecialPackets\SharpEvent.cs" />
+    <Compile Include="Communication\ReceivePackets\SpecialPackets\WhisperEvent.cs" />
+    <Compile Include="Communication\Session.cs" />
+    <Compile Include="Communication\SessionMessage.cs" />
+    <Compile Include="Communication\StaticMessageHandler.cs" />
+    <Compile Include="Core\ConfigurationData.cs" />
+    <Compile Include="Core\MapPoint.cs" />
+    <Compile Include="Core\ServerMath.cs" />
+    <Compile Include="Core\Langs\LangsManager.cs" />
+    <Compile Include="Core\Langs\Language.cs" />
+    <Compile Include="Core\MD5.cs" />
+    <Compile Include="Core\WriteConsole.cs" />
+    <Compile Include="Net\GmServerListener.cs" />
+    <Compile Include="Net\SocketConnection.cs" />
+    <Compile Include="Net\SocketListener.cs" />
+    <Compile Include="NosTale\Accounts\Account.cs" />
+    <Compile Include="NosTale\Buffs\Buff.cs" />
+    <Compile Include="NosTale\Buffs\BuffList.cs" />
+    <Compile Include="NosTale\Buffs\BuffsManager.cs" />
+    <Compile Include="NosTale\Buffs\PersonalBuff.cs" />
+    <Compile Include="NosTale\Channels\Channel.cs" />
+    <Compile Include="NosTale\Entities\Bases\EntitieBase.cs" />
+    <Compile Include="NosTale\Entities\Managers\EntitieBaseManager.cs" />
+    <Compile Include="NosTale\Entities\Entitie.cs" />
+    <Compile Include="NosTale\Entities\GlobalFunctions.cs" />
+    <Compile Include="NosTale\Entities\Managers\NpcsManager.cs" />
+    <Compile Include="NosTale\Entities\Managers\PlayersManager.cs" />
+    <Compile Include="NosTale\Entities\Npcs\Npc.cs" />
+    <Compile Include="NosTale\Entities\Players\FriendBlackList\FriendsList.cs" />
+    <Compile Include="NosTale\Entities\Players\FriendBlackList\LPlayer.cs" />
+    <Compile Include="NosTale\Entities\Players\Inventorys\Inventory.cs" />
+    <Compile Include="NosTale\Entities\Players\Inventorys\InventoryItem.cs" />
+    <Compile Include="NosTale\Entities\Players\Inventorys\InventorySlot.cs" />
+    <Compile Include="NosTale\Entities\Players\Player.cs" />
+    <Compile Include="NosTale\Entities\Players\SkillBar\SkillBar.cs" />
+    <Compile Include="NosTale\Familys\Family.cs" />
+    <Compile Include="NosTale\Familys\FamilyHistorics\FamilyHistoric.cs" />
+    <Compile Include="NosTale\Familys\FamilyHistorics\HistoricItem.cs" />
+    <Compile Include="NosTale\Familys\FamilyMember.cs" />
+    <Compile Include="NosTale\GameServer.cs" />
+    <Compile Include="NosTale\Groups\Group.cs" />
+    <Compile Include="NosTale\Items\DropItem.cs" />
+    <Compile Include="NosTale\Items\Item.cs" />
+    <Compile Include="NosTale\Items\ItemBase.cs" />
+    <Compile Include="NosTale\Items\ItemsManager.cs" />
+    <Compile Include="NosTale\Items\BaseDropItem.cs" />
+    <Compile Include="NosTale\Items\Others\Fairy.cs" />
+    <Compile Include="NosTale\Items\Others\Locomotion.cs" />
+    <Compile Include="NosTale\Items\Others\Specialist.cs" />
+    <Compile Include="NosTale\Levels\LevelsManager.cs" />
+    <Compile Include="NosTale\Maps\MiniLandZone\MinilandZone.cs" />
+    <Compile Include="NosTale\Maps\SpecialMaps\Arena.cs" />
+    <Compile Include="NosTale\Maps\Map.cs" />
+    <Compile Include="NosTale\Maps\MapData.cs" />
+    <Compile Include="NosTale\Maps\SpecialMaps\Miniland.cs" />
+    <Compile Include="NosTale\Maps\Portals\Portal.cs" />
+    <Compile Include="NosTale\Maps\Portals\PortalsManager.cs" />
+    <Compile Include="NosTale\MiniGames\MiniGame.cs" />
+    <Compile Include="NosTale\MiniGames\MiniGameAward.cs" />
+    <Compile Include="NosTale\MiniGames\MiniGameManager.cs" />
+    <Compile Include="NosTale\Missions\Quests\BaseQuest.cs" />
+    <Compile Include="NosTale\Missions\Quests\PersonalQuestManager.cs" />
+    <Compile Include="NosTale\Missions\Quests\QuestManager.cs" />
+    <Compile Include="NosTale\Shops\Shop.cs" />
+    <Compile Include="NosTale\Shops\ShopItem.cs" />
+    <Compile Include="NosTale\Shops\ShopsManager.cs" />
+    <Compile Include="NosTale\Skills\Skill.cs" />
+    <Compile Include="NosTale\Skills\SkillBuff.cs" />
+    <Compile Include="NosTale\Skills\SkillsManager.cs" />
+    <Compile Include="NosTale\Skills\SkillTypes\BaseAttractSkill.cs" />
+    <Compile Include="NosTale\Skills\SkillTypes\BaseMoveSkill.cs" />
+    <Compile Include="NosTale\Skills\SkillTypes\BaseSkill.cs" />
+    <Compile Include="NosTale\Skills\EntitieSkill.cs" />
+    <Compile Include="NosTale\Skills\SkillTypes\BaseZoneSkill.cs" />
+    <Compile Include="NosTale\Skills\SkillTypes\CibleZoneSkill.cs" />
+    <Compile Include="NosTale\Skills\SkillTypes\BuffSkill.cs" />
+    <Compile Include="NosTale\Skills\SkillTypes\SpecialCibleSkill.cs" />
+    <Compile Include="NosTale\UpgradeSystem\ItemUpgrade.cs" />
+    <Compile Include="NosTale\UpgradeSystem\ItemUpgradeManager.cs" />
+    <Compile Include="NosTale\UpgradeSystem\SpUpgrade.cs" />
+    <Compile Include="NosTale\UpgradeSystem\SpUpgradeManager.cs" />
+    <Compile Include="NosTale\UpgradeSystem\UpgradeController.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\Database.cs" />
+    <Compile Include="Storage\DatabaseClient.cs" />
+    <Compile Include="Storage\DatabaseException.cs" />
+    <Compile Include="Storage\DatabaseManager.cs" />
+    <Compile Include="Storage\DatabaseServer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ServerIco.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
